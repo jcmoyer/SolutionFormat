@@ -1,5 +1,19 @@
 ================================================================================
-== INSTALLING
+== DESCRIPTION
+================================================================================
+SolutionFormat is a tool for formatting all the documents in a Visual Studio
+project. Sometimes, you receive a project that has a different brace style than
+you or your team do, or maybe you just want to make sure that every file in your
+project has a standard format. FormatSolution lets you do this automatically so
+that you don't have to go through the hassle of manually opening every file
+yourself!
+
+SolutionFormat uses the Edit.FormatDocument command. Therefore, whatever
+formatting options are specified by your Text Editor -> [LANGUAGE] settings are
+used in the formatting process.
+
+================================================================================
+== INSTALLATION
 ================================================================================
 1.) Open Visual Studio 2010.
 
@@ -23,8 +37,19 @@
     solution and execute the Format Document command.
 
 ================================================================================
-== SUPPORTING MORE FILETYPES
+== MODIFYING SUPPORTED FILETYPES
 ================================================================================
+By default, FormatSolution only formats the following types of documents:
+
+    .cs     - C# source files
+    .vb     - Visual Basic source files
+    .xml    - XML files
+    .config - XML configuration files
+    .aspx   - ASP.NET files
+
+You may want to modify this list to support more filetypes, or remove a
+filetype altogether. Here are the steps to do so:
+
 1.) After you have installed the macro project, go to the Macro Explorer
     (ALT+F8).
 
